@@ -1,3 +1,5 @@
+"use strict";
+
 (function() {
   if (!('querySelector' in document && 'addEventListener' in document)) {
     return;
@@ -27,14 +29,13 @@
     return validate(email, /^[^@\s]+@[^@\s]+.[^@\s]+$/g);
   }
 
-  submit.setAttribute('disabled', 'disabled');
-  console.log("Main Function Run");
-
   document.addEventListener('DOMContentLoaded', function() {
     var form = document.querySelector('#form');
     var submit = document.querySelector('#submit');
     var input_email = document.querySelector('#email');
     console.log("DOM Function Run");
+
+    submit.setAttribute('disabled', 'disabled');
 
     form.addEventListener('keyup', function() {
       if (validate_email(input_email.value)) {
