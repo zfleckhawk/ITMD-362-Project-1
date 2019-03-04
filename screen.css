@@ -70,3 +70,8 @@ input, select {
 input:focus {
   background-color: #871b21;
 }
+
+input:disabled {
+  color: #e6e6e6;
+  background-color: #df5355;
+}
