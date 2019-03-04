@@ -43,6 +43,7 @@
         console.log("Email Valid");
       } else {
         submit.setAttribute('disabled', 'disabled');
+        document.querySelector('#submit').style.cursor = "default";
         console.log("Email Not Valid");
       }
     });
