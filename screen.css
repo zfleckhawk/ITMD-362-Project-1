@@ -7,9 +7,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
-body {
+main {
   background-color: #a62323;
-  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 header {
@@ -17,8 +18,8 @@ header {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 1.563em;
+  padding-bottom: 1.563em;
 }
 
 h1 {
@@ -38,12 +39,12 @@ h2 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px;
-  margin-bottom: 50px;
+  padding: 1.563em;
+  margin-bottom: 3.125em;
 }
 
 li {
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 label {
@@ -59,7 +60,7 @@ input, select {
   display: block;
   border: 0;
   outline: 0;
-  padding: .5em;
+  padding: 0.5em;
   font-size: 1.2em;
   background-color: #a31e21;
   color: white;
